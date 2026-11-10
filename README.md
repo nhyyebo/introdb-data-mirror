@@ -16,16 +16,16 @@
 </p>
 
 <p align="center">
-  <a href="https://introdb.app"><img src="https://raw.githubusercontent.com/nhyyebo/introdb-data-mirror/main/assets/icons/globe.svg" width="16" height="16" alt=""> introdb.app</a>
+  <a href="https://introdb.app">introdb.app</a>
   &nbsp;&middot;&nbsp;
-  <a href="https://api.introdb.app"><img src="https://raw.githubusercontent.com/nhyyebo/introdb-data-mirror/main/assets/icons/code-xml.svg" width="16" height="16" alt=""> API docs</a>
+  <a href="https://api.introdb.app">API docs</a>
   &nbsp;&middot;&nbsp;
   <a href="https://introdb.app/discord">Discord</a>
 </p>
 
 A daily export of every live timestamp in IntroDB. It contains the community result for each episode and nothing about the people who submitted it.
 
-## <img src="https://raw.githubusercontent.com/nhyyebo/introdb-data-mirror/main/assets/icons/download.svg" width="22" height="22" alt=""> Download
+## Download
 
 - Latest: https://data.introdb.app/latest/manifest.json
 - Daily snapshots: `https://data.introdb.app/snapshots/YYYY-MM-DD/`, kept for 90 days
@@ -36,9 +36,9 @@ curl -sO https://data.introdb.app/latest/segments.csv.gz
 gzip -dc segments.csv.gz | head
 ```
 
-## <img src="https://raw.githubusercontent.com/nhyyebo/introdb-data-mirror/main/assets/icons/database.svg" width="22" height="22" alt=""> Files
+## Files
 
-### <img src="https://raw.githubusercontent.com/nhyyebo/introdb-data-mirror/main/assets/icons/file-spreadsheet.svg" width="18" height="18" alt=""> segments.csv.gz
+### segments.csv.gz
 
 One row per live segment.
 
@@ -53,16 +53,16 @@ One row per live segment.
 | submission_count | number of submissions behind this result |
 | updated_at | last change, UTC |
 
-### <img src="https://raw.githubusercontent.com/nhyyebo/introdb-data-mirror/main/assets/icons/file-x.svg" width="18" height="18" alt=""> segmentless.csv.gz
+### segmentless.csv.gz
 
 Episodes marked as having no intro, recap or outro.
 Columns: `imdb_id, is_movie, season, episode, segment, updated_at`.
 
-### <img src="https://raw.githubusercontent.com/nhyyebo/introdb-data-mirror/main/assets/icons/file-json.svg" width="18" height="18" alt=""> manifest.json
+### manifest.json
 
 When the export was made, the license, and the row count, size and sha256 of each file.
 
-## <img src="https://raw.githubusercontent.com/nhyyebo/introdb-data-mirror/main/assets/icons/scale.svg" width="22" height="22" alt=""> License
+## License
 
 This data is available under the [Open Database License (ODbL) v1.0](https://opendatacommons.org/licenses/odbl/1-0/).
 You can use it for anything, including commercial projects, as long as you:
@@ -72,5 +72,3 @@ You can use it for anything, including commercial projects, as long as you:
 - offer an unrestricted copy if you distribute it in a restricted form
 
 The API at https://api.introdb.app is for looking up single episodes. If you need everything, download these files rather than crawling the API.
-
-<sub>Icons from [Lucide](https://lucide.dev) (ISC).</sub>
